@@ -1,0 +1,62 @@
+[
+  {
+    "id": "prod_001",
+    "companyId": "comp_001",
+    "name": "زيت دوار الشمس",
+    "description": "زيت نقي 5 لتر",
+    "price": 45,
+    "unit": "عبوة 5 لتر",
+    "image": "/assets/images/products/oil.jpg",
+    "category": "زيوت"
+  },
+  {
+    "id": "prod_002",
+    "companyId": "comp_002",
+    "name": "أكواب ورقية",
+    "description": "أكواب ورقية 8 أونصة",
+    "price": 25,
+    "unit": "كرتون (100 قطعة)",
+    "image": "/assets/images/products/cups.jpg",
+    "category": "أدوات تغليف"
+  },
+  {
+    "id": "prod_003",
+    "companyId": "comp_001",
+    "name": "أرز بسمتي فاخر",
+    "description": "أرز هندي فاخر، 10 كجم",
+    "price": 70,
+    "unit": "كيس 10 كجم",
+    "image": "/assets/images/products/rice.jpg",
+    "category": "حبوب"
+  },
+  {
+    "id": "prod_004",
+    "companyId": "comp_003",
+    "name": "فرن بيتزا إيطالي",
+    "description": "فرن بيتزا كهربائي احترافي كبير",
+    "price": 12000,
+    "unit": "وحدة",
+    "image": "/assets/images/products/pizza-oven.jpg",
+    "category": "معدات مطابخ"
+  },
+  {
+    "id": "prod_005",
+    "companyId": "comp_002",
+    "name": "أكياس نفايات كبيرة",
+    "description": "أكياس نفايات للمطاعم، 50 قطعة",
+    "price": 30,
+    "unit": "رول (50 قطعة)",
+    "image": "/assets/images/products/trash-bags.jpg",
+    "category": "أدوات تغليف"
+  },
+  {
+    "id": "prod_006",
+    "companyId": "comp_004",
+    "name": "عصير برتقال طبيعي",
+    "description": "عصير برتقال طازج، 1 لتر",
+    "price": 10,
+    "unit": "عبوة 1 لتر",
+    "image": "/assets/images/products/orange-juice.jpg",
+    "category": "مشروبات"
+  }
+]

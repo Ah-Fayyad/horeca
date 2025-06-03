@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل المورد | HorecaPack</title>
+  <link rel="stylesheet" href="/assets/css/companies.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <main class="container">
+    <div class="company-detail">
+      <div class="company-header">
+        <img id="companyLogo" src="/assets/images/default-company.png" alt="شعار الشركة" class="company-logo">
+        <div class="company-info">
+          <h1 id="companyName">اسم الشركة</h1>
+          <div class="company-meta">
+            <span id="companyCity" class="meta-item"><i class="fas fa-map-marker-alt"></i> المدينة</span>
+            <span id="companyCategory" class="meta-item"><i class="fas fa-tag"></i> التصنيف</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="company-products">
+        <h2>المنتجات المتاحة</h2>
+        <div class="products-grid" id="productsContainer">
+          <p class="loading-message">جاري تحميل المنتجات...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/assets/js/modules/companyDetail.js" type="module"></script>
+</body>
+</html>

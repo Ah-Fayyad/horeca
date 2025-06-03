@@ -1,0 +1,50 @@
+[
+  {
+    "id": "comp_001",
+    "name": "الشركة المتحدة للأغذية",
+    "description": "متخصصون في توريد المواد الغذائية للمطاعم والفنادق",
+    "category": "مواد غذائية",
+    "city": "الرياض",
+    "address": "حي العليا، شارع الملك فهد",
+    "phone": "+966112345678",
+    "email": "info@unitedfood.com",
+    "logo": "/assets/images/companies/food-company.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": "comp_002",
+    "name": "مصنع التغليف العربي",
+    "description": "أدوات تغليف عالية الجودة للمطاعم والكافيهات",
+    "category": "أدوات تغليف",
+    "city": "جدة",
+    "address": "حي الصفا، شارع الأمير سلطان",
+    "phone": "+966123456789",
+    "email": "sales@arabicpack.com",
+    "logo": "/assets/images/companies/packaging-company.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": "comp_003",
+    "name": "حلول المطابخ الحديثة",
+    "description": "تجهيزات ومعدات مطابخ احترافية",
+    "category": "معدات مطابخ",
+    "city": "الرياض",
+    "address": "شارع الأمير مقرن، حي النرجس",
+    "phone": "+966115551234",
+    "email": "info@modernkitchens.com",
+    "logo": "/assets/images/companies/kitchen-equipment.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": "comp_004",
+    "name": "المشروبات الطازجة المحدودة",
+    "description": "توريد عصائر ومشروبات طبيعية للمقاهي والمطاعم",
+    "category": "مشروبات",
+    "city": "جدة",
+    "address": "طريق الملك عبد العزيز، حي الروضة",
+    "phone": "+966127778899",
+    "email": "contact@freshdrinks.com",
+    "logo": "/assets/images/companies/drinks-company.jpg",
+    "rating": 4.0
+  }
+]

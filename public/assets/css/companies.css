@@ -1,0 +1,173 @@
+/* تعريف متغيرات CSS (تأكد من وجودها في :root أو في مكان متاح) */
+:root {
+  --primary-color: #1e1e2f; /* اللون الأساسي للهيدر والأزرار */
+  --accent-color: #ffcc00; /* لون التمييز للخلفيات الصفراء */
+  --text-dark-color: #333;
+  --text-light-grey: #666;
+  --border-color-light: #ddd;
+  --border-color-lighter: #eee;
+  --border-radius-md: 8px; /* نفس القيمة المستخدمة في main.css */
+  --box-shadow-light: 0 4px 12px rgba(0,0,0,0.1);
+  --box-shadow-hover: 0 5px 15px rgba(0,0,0,0.15); /* ظل أوضح عند التحويم */
+}
+
+/* تنسيقات قسم الشركات */
+.container {
+  padding: 2rem;
+  max-width: 1200px; /* لتحديد أقصى عرض للمحتوى */
+  margin: 0 auto; /* لوسيطة المحتوى في الصفحة */
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap; /* للسماح للعناصر بالنزول لسطر جديد في الشاشات الصغيرة */
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center; /* لوسيطة الفلاتر في الشاشات الكبيرة */
+}
+
+.filter-select {
+  padding: 10px 15px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color-light);
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-dark-color);
+}
+
+.companies-grid, .products-grid { /* دمج لأن الاثنين يستخدمان نفس الـ grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* تعديل بسيط لحجم أقل */
+  gap: 25px;
+}
+
+.company-card, .product-card { /* دمج لأن الاثنين يستخدمان نفس التنسيقات الأساسية */
+  border: 1px solid var(--border-color-lighter);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+}
+
+.company-card:hover, .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.company-logo, .product-image { /* دمج */
+  width: 100%;
+  height: 200px; /* يمكن تعديل الارتفاع حسب الحاجة */
+  object-fit: cover;
+  display: block; /* يزيل أي مسافات زائدة تحت الصورة */
+}
+
+.company-content, .product-info { /* دمج */
+  padding: 20px;
+}
+
+.company-content h3, .product-info h4 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.company-meta {
+  display: flex;
+  flex-wrap: wrap; /* للسماح بنزول العناصر لسطر جديد */
+  gap: 15px;
+  margin: 10px 0;
+  color: var(--text-light-grey);
+  font-size: 14px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* مسافة صغيرة بين الأيقونة والنص */
+}
+
+.product-price {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-top: 10px;
+}
+
+.product-unit {
+  font-size: 0.9em;
+  color: var(--text-light-grey);
+}
+
+.btn-view {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--accent-color); /* استخدام لون التمييز */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px; /* إضافة padding للزر */
+  border: 1px solid var(--accent-color);
+  border-radius: var(--border-radius-sm);
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* تنسيقات لصفحة تفاصيل الشركة */
+.company-detail {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-light);
+  margin-bottom: 2rem;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* للسماح للعناصر بالنزول لسطر جديد */
+}
+
+.company-header .company-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* لجعل الشعار دائريًا */
+  object-fit: cover;
+  flex-shrink: 0; /* منع الصورة من الانكماش */
+  border: 2px solid var(--border-color-lighter);
+}
+
+.company-info h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.company-info .company-meta {
+  font-size: 1rem;
+}
+
+.company-products h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* رسائل عدم وجود نتائج */
+.no-results, .no-products {
+  text-align: center;
+  color: var(--text-light-grey);
+  font-size: 1.2rem;
+  padding: 2rem;
+}
